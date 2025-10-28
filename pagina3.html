@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Cuadro Informativo - Vehículos Autónomos</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(to bottom right, #000000, #ff69b4);
+      color: white;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem 2rem;
+      background-color: rgba(255, 105, 180, 0.2);
+      flex-wrap: wrap;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2rem;
+      text-shadow: 2px 2px #000;
+    }
+
+    .home-button {
+      background-color: white;
+      color: #ff1493;
+      padding: 0.6rem 1.2rem;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 1rem;
+      transition: background-color 0.3s ease;
+    }
+
+    .home-button:hover {
+      background-color: #ff69b4;
+      color: white;
+    }
+
+    .info-box {
+      background-color: rgba(255, 255, 255, 0.1);
+      margin: 2rem auto;
+      width: 90%;
+      max-width: 800px;
+      border-radius: 12px;
+      padding: 1.5rem;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+
+    th, td {
+      padding: 1rem;
+      text-align: left;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+    }
+
+    th {
+      background-color: rgba(255, 255, 255, 0.2);
+      font-size: 1.2rem;
+    }
+
+    td {
+      font-size: 1rem;
+    }
+
+    .navigation-buttons {
+      display: flex;
+      justify-content: space-between;
+      padding: 2rem;
+      flex-wrap: wrap;
+    }
+
+    .navigation-buttons a {
+      text-decoration: none;
+      padding: 0.8rem 1.5rem;
+      background-color: white;
+      color: #ff1493;
+      border-radius: 8px;
+      font-weight: bold;
+      transition: background-color 0.3s ease;
+    }
+
+    .navigation-buttons a:hover {
+      background-color: #ff69b4;
+      color: white;
+    }
+
+    footer {
+      background-color: rgba(0, 0, 0, 0.5);
+      text-align: center;
+      padding: 1rem;
+      font-size: 0.9rem;
+      margin-top: auto;
+    }
+
+    @media (max-width: 600px) {
+      header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 1rem;
+      }
+
+      header h1 {
+        font-size: 1.6rem;
+      }
+
+      .home-button {
+        width: 100%;
+        text-align: center;
+      }
+
+      th, td {
+        padding: 0.8rem;
+        font-size: 0.95rem;
+      }
+
+      .navigation-buttons {
+        flex-direction: column;
+        gap: 1rem;
+        align-items: center;
+      }
+
+      .navigation-buttons a {
+        width: 100%;
+        text-align: center;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <a href="index.html" class="home-button">Pagina principal</a>
+    <h1>Tabla de informacion: Vehiculos Autonomos</h1>
+  </header>
+
+  <div class="info-box">
+    <table>
+      <tr>
+        <th>Aspecto</th>
+        <th>Descripción</th>
+      </tr>
+      <tr>
+        <td>Definicion</td>
+        <td>Vehiculos que operan sin intervencion humana directa, utilizando sensores, inteligencia artificial y sistemas de navegacion autonoma.</td>
+      </tr>
+      <tr>
+        <td>Usuarios</td>
+        <td>Conductores, empresas de transporte, desarrolladores de tecnologia, gobiernos y ciudadanos beneficiados por la movilidad inteligente.</td>
+      </tr>
+      <tr>
+        <td>Finalidad</td>
+        <td>Reducir accidentes, optimizar rutas, mejorar la eficiencia energetica y democratizar el acceso al transporte seguro y automatizado.</td>
+      </tr>
+      <tr>
+        <td>Ejemplos de aplicaciones</td>
+        <td>Taxis autonomos, camiones de carga sin conductor, buses inteligentes, vehiculos de reparto y autos privados con piloto automatico.</td>
+      </tr>
+      <tr>
+        <td>Principio rector</td>
+        <td>Seguridad, etica, sostenibilidad y accesibilidad en el diseño y despliegue de tecnologias de conduccion autonoma.</td>
+      </tr>
+      <tr>
+        <td>Ventajas</td>
+        <td>Menor tasa de accidentes, reduccion de trafico, ahorro de combustible, inclusion de personas con discapacidad y mayor productividad.</td>
+      </tr>
+      <tr>
+        <td>Desafios</td>
+        <td>Regulacion legal, ciberseguridad, aceptacion social, infraestructura vial y responsabilidad en caso de fallos.</td>
+      </tr>
+      <tr>
+        <td>Tecnologias clave</td>
+        <td>Sensores LIDAR, camaras 360°, GPS avanzado, redes neuronales, aprendizaje profundo y conectividad 5G.</td>
+      </tr>
+    </table>
+  </div>
+
+  <div class="navigation-buttons">
+    <a href="pagina2.html">Atrás</a>
+    <a href="formulario.html">Siguiente</a>
+  </div>
+
+  <footer>
+    &copy; 2025 Proyecto de Vehículos Autónomos. Karla Lorena Jacinto Azucena sección 2-1.
+  </footer>
+</body>
+</html>

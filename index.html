@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Vehículos Autónomos</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(to bottom right, #000000, #ff69b4);
+      color: white;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+
+    header {
+      text-align: center;
+      padding: 2rem;
+      background-color: rgba(255, 105, 180, 0.2);
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2.8rem;
+      text-shadow: 2px 2px #000;
+    }
+
+    main {
+      flex: 1;
+      padding: 2rem;
+      text-align: center;
+    }
+
+    main p {
+      font-size: 1.2rem;
+      max-width: 700px;
+      margin: 0 auto 2rem;
+      line-height: 1.6;
+    }
+
+    .cuadros-superiores,
+    .cuadros-inferiores {
+      display: flex;
+      justify-content: center;
+      gap: 1.5rem;
+      flex-wrap: wrap;
+      margin-bottom: 2rem;
+    }
+
+    .cuadro-link {
+      text-decoration: none;
+      background-color: #ff69b4;
+      color: black;
+      border: 2px solid white;
+      border-radius: 12px;
+      width: 120px;
+      height: 120px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: bold;
+      font-size: 1.1rem;
+      box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
+      transition: transform 0.3s ease, background-color 0.3s ease;
+      flex-shrink: 0;
+    }
+
+    .cuadro-link:hover {
+      transform: scale(1.1);
+      background-color: #ff1493;
+      color: white;
+    }
+
+    footer {
+      text-align: center;
+      padding: 1rem;
+      background-color: rgba(0, 0, 0, 0.5);
+      font-size: 0.9rem;
+    }
+
+    @media (max-width: 600px) {
+      .cuadro-link {
+        width: 100%;
+        height: auto;
+        padding: 1rem;
+        font-size: 1rem;
+      }
+
+      .cuadros-superiores,
+      .cuadros-inferiores {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      header h1 {
+        font-size: 2rem;
+      }
+
+      main p {
+        font-size: 1rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Vehículos Autónomos</h1>
+  </header>
+
+  <main>
+    <p>Descubre cómo los vehículos autónomos están revolucionando el transporte moderno, combinando inteligencia artificial, sensores avanzados y diseño futurista para crear una experiencia de conducción sin intervención humana.</p>
+
+    <div class="cuadros-superiores">
+      <a href="pagina1.html" class="cuadro-link">Página 1</a>
+      <a href="pagina2.html" class="cuadro-link">Página 2</a>
+      <a href="pagina3.html" class="cuadro-link">Página 3</a>
+    </div>
+
+    <div class="cuadros-inferiores">
+      <a href="pagina4.html" class="cuadro-link">Página 4</a>
+      <a href="formulario.html" class="cuadro-link">Página 5</a>
+    </div>
+  </main>
+
+  <footer>
+    &copy; 2025 Proyecto de Vehículos Autónomos. Karla Lorena Jacinto Azucena sección 2-1.
+  </footer>
+</body>
+</html>

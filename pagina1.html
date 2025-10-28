@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Información General</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(to bottom right, #000000, #ff69b4);
+      color: white;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+
+    header {
+      text-align: center;
+      padding: 2rem;
+      background-color: rgba(255, 105, 180, 0.2);
+    }
+
+    .section {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: center;
+      padding: 2rem;
+      gap: 2rem;
+    }
+
+    .section:nth-child(even) {
+      flex-direction: row-reverse;
+    }
+
+    .text {
+      flex: 1 1 300px;
+      font-size: 1.1rem;
+      line-height: 1.6;
+    }
+
+    .imagen-parrafo {
+      flex: 1 1 300px;
+      max-width: 250px;
+      height: auto;
+      border: 2px dashed white;
+      border-radius: 8px;
+      object-fit: cover;
+    }
+
+    .navigation-buttons {
+      display: flex;
+      justify-content: space-between;
+      padding: 2rem;
+    }
+
+    .navigation-buttons a {
+      text-decoration: none;
+      padding: 0.8rem 1.5rem;
+      background-color: white;
+      color: #ff69b4;
+      border-radius: 8px;
+      font-weight: bold;
+    }
+
+    footer {
+      text-align: center;
+      padding: 1rem;
+      background-color: rgba(0, 0, 0, 0.5);
+      font-size: 0.9rem;
+    }
+
+    @media (max-width: 768px) {
+      .section {
+        flex-direction: column;
+      }
+
+      .navigation-buttons {
+        flex-direction: column;
+        gap: 1rem;
+        align-items: center;
+      }
+
+      .imagen-parrafo {
+        max-width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+<header style="display: flex; justify-content: flex-start; align-items: center; padding: 10px;">
+  <a href="index.html" style="
+    background-color: #007BFF;
+    color: white;
+    padding: 8px 16px;
+    text-decoration: none;
+    border-radius: 4px;
+    font-family: sans-serif;
+    font-size: 16px;
+  ">
+    Página principal
+  </a>
+</header>
+  <header>
+    <h1>Información General sobre Vehículos Autónomos</h1>
+  </header>
+
+  <div class="section">
+    <img src="imagenes/img1.jpg" alt="Vehículo autónomo general" class="imagen-parrafo">
+    <div class="text">
+      <strong>¿QUÉ SON LOS VEHÍCULOS AUTÓNOMOS?</strong><br><br>
+      Los vehículos autónomos son sistemas de transporte capaces de operar sin intervención humana directa.
+	  Utilizan sensores, cámaras, radares, GPS y algoritmos de inteligencia artificial para percibir su entorno, tomar decisiones y desplazarse de forma segura. 
+	  Su objetivo es transformar la movilidad, reduciendo accidentes, optimizando rutas y mejorando la eficiencia energética.
+	  Los vehículos autónomos son automóviles o camiones que pueden detectar su entorno y navegar sin intervención humana, gracias a una combinación de sensores, cámaras, GPS e inteligencia artificial. Estos vehículos se clasifican en seis niveles de autonomía, desde los sistemas de asistencia al conductor (Nivel 1) 
+	  hasta los que son completamente autónomos en cualquier condición
+
+      <br><br>🔍 <strong>Componentes clave:</strong>
+      - Sensores LIDAR y cámaras para visión 360°.
+      - GPS y mapas digitales para navegación precisa.
+      - Algoritmos de IA para toma de decisiones en tiempo real.
+      - Sistemas de control para acelerar, frenar y girar automáticamente.
+
+      <br><br>🚗 <strong>Clasificación por niveles de autonomía (SAE):</strong>
+      - Nivel 0: Sin automatización.
+      - Nivel 1–2: Asistencia parcial (frenado automático, control de velocidad).
+      - Nivel 3: Conducción autónoma limitada bajo ciertas condiciones.
+      - Nivel 4: Autonomía completa en entornos controlados.
+      - Nivel 5: Autonomía total en cualquier entorno sin volante ni pedales.
+    </div>
+  </div>
+
+  <div class="section">
+    <img src="imagenes/img2.jpg" alt="Avances tecnológicos" class="imagen-parrafo">
+    <div class="text">
+      <strong>AVANCES RECIENTES EN VEHÍCULOS AUTÓNOMOS</strong><br><br>
+      El desarrollo de vehículos autónomos ha avanzado rápidamente gracias a
+	  la integración de inteligencia artificial, conectividad 5G y aprendizaje profundo. 
+	  Empresas como Tesla, Waymo, Cruise y Baidu lideran la innovación, probando flotas en ciudades inteligentes
+	  y autopistas.
+	  Los avances recientes en vehículos autónomos incluyen la fusión de sensores (combinación de datos de LiDAR, radar y cámaras) para una visión de 360 grados, la IA y el aprendizaje automático para la toma de decisiones en tiempo real, y la mejora de sistemas de conducción asistida como los que permiten el manejo sin manos en ciertas autopistas. Además, se están haciendo progresos en el sector logístico con camiones y furgonetas 
+	  autónomas para entregas más eficientes y continuas.
+
+      <br><br>🧠 <strong>Innovaciones destacadas:</strong>
+      - Reconocimiento de peatones, señales y obstáculos en tiempo real.
+      - Simulación de millones de escenarios para entrenamiento virtual.
+      - Comunicación entre vehículos (V2V) y con infraestructura (V2X).
+      - Reducción de errores humanos y mejora en la seguridad vial.
+
+      <br><br>🌍 <strong>Aplicaciones actuales:</strong>
+      - Taxis autónomos en San Francisco, Shanghái y Phoenix.
+      - Camiones de carga sin conductor en rutas logísticas.
+      - Buses inteligentes en campus universitarios y parques tecnológicos.
+      - Vehículos de reparto autónomo para última milla.
+    </div>
+  </div>
+
+  <div class="section">
+    <img src="imagenes/img3.jpg" alt="Futuro de la movilidad" class="imagen-parrafo">
+    <div class="text">
+      <strong>FUTURO DE LOS VEHÍCULOS AUTÓNOMOS</strong><br><br>
+      Se espera que para 2035 los vehículos autónomos representen más del 25% del parque automotor global.
+	  Su impacto será profundo en la economía, el urbanismo y la sostenibilidad.
+	  El futuro de los vehículos autónomos incluye un mercado en rápido crecimiento, una mayor seguridad vial, beneficios de movilidad para personas con limitaciones y una mayor eficiencia en el transporte. Sin embargo, desafíos como la infraestructura, la regulación legal, la ciberseguridad y la adaptación de la fuerza laboral deben superarse para una adopción masiva.
+
+      <br><br>🚀 <strong>Proyecciones clave:</strong>
+      - Reducción de accidentes viales hasta en un 90%.
+      - Menor congestión gracias a rutas optimizadas por IA.
+      - Ciudades con menos estacionamientos y más espacio público.
+      - Inclusión de personas con discapacidad en la movilidad autónoma.
+
+      <br><br>⚖ <strong>Desafíos éticos y legales:</strong>
+      - ¿Quién es responsable en caso de accidente?
+      - Privacidad de datos recogidos por sensores.
+      - Regulación internacional para pruebas y circulación.
+      - Equidad en el acceso a la tecnología.
+
+      <br><br>🌐 <strong>Visión a largo plazo:</strong>
+      - Ecosistemas de movilidad compartida sin conductores.
+      - Integración con energías limpias y redes inteligentes.
+      - Vehículos que aprenden de cada viaje y se actualizan automáticamente.
+    </div>
+  </div>
+
+  <div class="navigation-buttons">
+    <a href="index.html">Atrás</a>
+    <a href="pagina2.html">Siguiente</a>
+  </div>
+
+  <footer>
+    &copy; 2025 Proyecto de Vehículos Autónomos. Karla Lorena Jacinto Azucena sección 2-1.
+  </footer>
+</body>
+
+</html>
