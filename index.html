@@ -40,13 +40,18 @@
       line-height: 1.6;
     }
 
-    .cuadros-superiores,
-    .cuadros-inferiores {
+    .cuadros {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 2rem;
+    }
+
+    .fila {
       display: flex;
       justify-content: center;
       gap: 1.5rem;
       flex-wrap: wrap;
-      margin-bottom: 2rem;
     }
 
     .cuadro-link {
@@ -64,7 +69,6 @@
       font-size: 1.1rem;
       box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
       transition: transform 0.3s ease, background-color 0.3s ease;
-      flex-shrink: 0;
     }
 
     .cuadro-link:hover {
@@ -88,8 +92,7 @@
         font-size: 1rem;
       }
 
-      .cuadros-superiores,
-      .cuadros-inferiores {
+      .fila {
         flex-direction: column;
         align-items: center;
       }
@@ -112,15 +115,16 @@
   <main>
     <p>Descubre cómo los vehículos autónomos están revolucionando el transporte moderno, combinando inteligencia artificial, sensores avanzados y diseño futurista para crear una experiencia de conducción sin intervención humana.</p>
 
-    <div class="cuadros-superiores">
-      <a href="pagina1.html" class="cuadro-link">Página 1</a>
-      <a href="pagina2.html" class="cuadro-link">Página 2</a>
-      <a href="pagina3.html" class="cuadro-link">Página 3</a>
-    </div>
-
-    <div class="cuadros-inferiores">
-      <a href="pagina4.html" class="cuadro-link">Página 4</a>
-      <a href="formulario.html" class="cuadro-link">Página 5</a>
+    <div class="cuadros">
+      <div class="fila">
+        <a href="pagina1.html" class="cuadro-link">informacion general</a>
+        <a href="pagina2.html" class="cuadro-link">video informativo</a>
+        <a href="pagina3.html" class="cuadro-link">tabla informativa</a>
+      </div>
+      <div class="fila">
+        <a href="formulario.html" class="cuadro-link">formulario</a>
+        <a href="pagina5.html" class="cuadro-link">informacion del creador</a>
+      </div>
     </div>
   </main>
 
